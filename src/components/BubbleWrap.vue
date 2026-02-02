@@ -55,7 +55,7 @@ function popBubble(index: number) {
 
 .bubble {
   aspect-ratio: 1 / 1;
-  width: 44px;
+  width: clamp(28px, 6.5vw, 56px);
 
   background-color: #191919;
   border-radius: 6px;
