@@ -3,12 +3,10 @@ import BubbleWrap from "./BubbleWrap.vue";
 </script>
 
 <template>
-  <span>
-    <p class="welcome">
-      Welcome to the fiery forge of<br/>
-      <span class="welcome-name">Z'ark Ashveil, the blacksmith of the ember fields!</span>
-    </p>
-  </span>
+  <p class="welcome">
+    Welcome to the fiery forge of<br/>
+    <span class="welcome-name">Z'ark Ashveil, the blacksmith of the ember fields!</span>
+  </p>
 
   <p>
     I am still tidying up the forge. There is not much to see here right now
@@ -19,7 +17,7 @@ import BubbleWrap from "./BubbleWrap.vue";
   </p>
 
   <div class="card">
-    <BubbleWrap :rows="10" :columns="4"/>
+    <BubbleWrap/>
   </div>
 
   <p class="bye">Hope you're having a great day!<br/>Much love to my wife, sheep! 🐑 🐑 🌙 🐍 🦎 💜</p>

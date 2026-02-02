@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import {ref} from 'vue'
 
-const {rows = 10, columns = 4} = defineProps<{
-  rows: number,
-  columns: number
+const {columns = 10, rows = 4} = defineProps<{
+  columns?: number,
+  rows?: number
 }>()
 
 type Bubble = {
@@ -11,7 +11,7 @@ type Bubble = {
 }
 
 const bubbles = ref<Bubble[]>(
-    Array.from({length: rows * columns}, () => ({popped: false}))
+    Array.from({length: columns * rows}, () => ({popped: false}))
 )
 
 function popBubble(index: number) {
@@ -43,7 +43,8 @@ function popBubble(index: number) {
 <style scoped>
 .bubble-wrap {
   display: grid;
-  grid-template-columns: repeat(v-bind(rows), 1fr);
+  grid-template-columns: repeat(v-bind(columns), 1fr);
+  grid-template-rows: repeat(v-bind(rows), 1fr);
   gap: 4px;
 }
 
@@ -60,7 +61,7 @@ function popBubble(index: number) {
 }
 
 .bubble:hover:not(.popped) {
-  background-color: #2b2d31;
+  background-color: #373737;
   transform: translateY(-1px);
 }
 
