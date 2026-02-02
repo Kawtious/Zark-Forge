@@ -2,8 +2,8 @@
 import {ref} from 'vue'
 
 const {rows = 10, columns = 4} = defineProps<{
-  rows?: number,
-  columns?: number
+  rows: number,
+  columns: number
 }>()
 
 type Bubble = {
@@ -15,6 +15,10 @@ const bubbles = ref<Bubble[]>(
 )
 
 function popBubble(index: number) {
+  if (!bubbles.value[index]) {
+    return;
+  }
+
   if (!bubbles.value[index].popped) {
     bubbles.value[index].popped = true
   }

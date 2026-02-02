@@ -19,7 +19,7 @@ import BubbleWrap from "./BubbleWrap.vue";
   </p>
 
   <div class="card">
-    <BubbleWrap rows="10" columns="4"/>
+    <BubbleWrap :rows="10" :columns="4"/>
   </div>
 
   <p class="bye">Hope you're having a great day!<br/>Much love to my wife, sheep! 🐑 🐑 🌙 🐍 🦎 💜</p>
