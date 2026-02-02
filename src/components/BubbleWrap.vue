@@ -43,20 +43,29 @@ function popBubble(index: number) {
 <style scoped>
 .bubble-wrap {
   display: grid;
-  grid-template-columns: repeat(v-bind(columns), 1fr);
-  grid-template-rows: repeat(v-bind(rows), 1fr);
-  gap: 4px;
+  grid-template-columns: repeat(v-bind(columns), auto);
+  grid-template-rows: repeat(v-bind(rows), auto);
+
+  column-gap: clamp(2px, 0.5vw, 4px);
+  row-gap: clamp(3px, 0.8vw, 6px);
+
+  justify-content: center;
+  align-content: center;
 }
 
 .bubble {
+  aspect-ratio: 1 / 1;
+  width: clamp(28px, 6.5vw, 56px);
+
   background-color: #191919;
   border-radius: 6px;
-  aspect-ratio: 1 / 1;
-  width: clamp(36px, 8vw, 72px);
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   cursor: pointer;
+
   transition: background-color 0.15s ease,
   transform 0.08s ease;
 }
@@ -69,8 +78,10 @@ function popBubble(index: number) {
 .spoiler {
   color: transparent;
   background-color: transparent;
+
   border-radius: 4px;
   padding: 4px 8px;
+
   transition: filter 0.15s ease;
 }
 
