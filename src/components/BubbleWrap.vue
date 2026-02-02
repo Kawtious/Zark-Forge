@@ -51,7 +51,8 @@ function popBubble(index: number) {
 .bubble {
   background-color: #191919;
   border-radius: 6px;
-  height: 56px;
+  aspect-ratio: 1 / 1;
+  width: clamp(36px, 8vw, 72px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -67,7 +68,7 @@ function popBubble(index: number) {
 
 .spoiler {
   color: transparent;
-  background-color: #373737;
+  background-color: transparent;
   border-radius: 4px;
   padding: 4px 8px;
   transition: filter 0.15s ease;
