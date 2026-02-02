@@ -80,6 +80,8 @@ function popBubble(index: number) {
 
 .pop-text {
   font-weight: 700;
+  font-size: clamp(0.6rem, 2vw, 1rem);
   letter-spacing: 1px;
+  white-space: nowrap;
 }
 </style>
