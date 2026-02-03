@@ -1,23 +1,9 @@
 <script setup lang="ts">
-import Welcome from './components/Welcome.vue'
+import ForgeView from '@/views/ForgeView.vue'
 </script>
 
 <template>
-  <div>
-    <h1 class="logo">
-      🔥🐉🔨🔥
-    </h1>
-  </div>
-  <Welcome/>
+  <ForgeView />
 </template>
 
-<style scoped>
-.logo {
-  will-change: filter;
-  transition: filter 300ms;
-}
-
-.logo:hover {
-  filter: drop-shadow(0 0 2em rgba(255, 113, 100, 0.67));
-}
-</style>
+<style scoped></style>

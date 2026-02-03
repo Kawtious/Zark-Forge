@@ -1,0 +1,24 @@
+@import './base.css';
+
+#app {
+  min-width: 100%;
+  min-height: 100%;
+  font-weight: normal;
+}
+
+.hidden {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: hsl(45, 100%, 60%);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsl(14, 100%, 50%);
+  }
+}
