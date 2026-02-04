@@ -34,7 +34,6 @@ import ForgeSocials from '@/components/ForgeSocials.vue'
 <style scoped>
 .view {
   min-height: 100vh;
-  min-width: 100vh;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
   color: #e6e2df;
