@@ -12,15 +12,13 @@ import ForgeSocials from '@/components/ForgeSocials.vue'
     <section class="left">
       <ForgeTitle title="The Forge Awakens" />
 
-      <div class="description">
-        <p>
-          Sparks are flying and the anvil is ringing; this corner of the forge is still being
-          shaped.<br /><br />
-          I'm hammering ideas into steel, tempering designs with fire, and making sure everything
-          that comes out is worthy of a dragon's seal.<br /><br />
-          Check back soon to see what emerges from the flames.
-        </p>
-      </div>
+      <p class="description">
+        Sparks are flying and the anvil is ringing; this corner of the forge is still being
+        shaped.<br /><br />
+        I'm hammering ideas into steel, tempering designs with fire, and making sure everything that
+        comes out is worthy of a dragon's seal.<br /><br />
+        Check back soon to see what emerges from the flames.
+      </p>
 
       <ForgeSocials />
     </section>
