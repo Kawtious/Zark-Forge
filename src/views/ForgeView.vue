@@ -43,7 +43,7 @@ import ForgeSocials from '@/components/ForgeSocials.vue'
   display: flex;
   flex-direction: column;
 
-  padding: 10rem;
+  padding: 0 10rem 0 10rem;
   gap: 1.5rem;
 
   justify-content: center;
@@ -62,7 +62,8 @@ import ForgeSocials from '@/components/ForgeSocials.vue'
 
 @media (max-width: 1280px) {
   .left {
-    padding: 6rem;
+    padding-right: 6rem;
+    padding-left: 6rem;
   }
 }
 
@@ -72,7 +73,15 @@ import ForgeSocials from '@/components/ForgeSocials.vue'
   }
 
   .left {
-    padding: 4rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .left {
+    padding-right: 2rem;
+    padding-left: 2rem;
   }
 }
 </style>
