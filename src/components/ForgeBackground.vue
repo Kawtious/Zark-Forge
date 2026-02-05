@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import ForgeSparks from '@/components/ForgeSparks.vue'
-import ForgeEmbers from '@/components/ForgeEmbers.vue'
+import ForgeSparks from '@/components/ForgeSparks.vue';
+import ForgeEmbers from '@/components/ForgeEmbers.vue';
 </script>
 
 <template>

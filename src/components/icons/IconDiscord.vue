@@ -7,8 +7,8 @@
 -->
 <script setup lang="ts">
 const { colour = '#5865F2' } = defineProps<{
-  colour?: string
-}>()
+  colour?: string;
+}>();
 </script>
 
 <template>

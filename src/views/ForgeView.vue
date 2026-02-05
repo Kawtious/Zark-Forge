@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import ForgeTitle from '@/components/ForgeTitle.vue'
-import ForgeDragon from '@/components/ForgeDragon.vue'
-import ForgeBackground from '@/components/ForgeBackground.vue'
-import ForgeSocials from '@/components/ForgeSocials.vue'
+import ForgeTitle from '@/components/ForgeTitle.vue';
+import ForgeDragon from '@/components/ForgeDragon.vue';
+import ForgeBackground from '@/components/ForgeBackground.vue';
+import ForgeSocials from '@/components/ForgeSocials.vue';
 </script>
 
 <template>
