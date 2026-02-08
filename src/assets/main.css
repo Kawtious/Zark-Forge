@@ -1,12 +1,2 @@
-@import './base.css';
 @import "tailwindcss";
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-#app {
-  min-width: 100%;
-  min-height: 100%;
-  font-weight: normal;
-}
+@import './base.css';
