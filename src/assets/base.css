@@ -30,11 +30,11 @@
     }
   }
 
-  --animate-ember-float: ember-float linear infinite;
+  --animate-ember-rise: ember-rise var(--duration) linear infinite;
 
-  @keyframes ember-float {
+  @keyframes ember-rise {
     0% {
-      transform: translateY(0) translateX(0);
+      transform: translate(var(--x), 110vh);
       opacity: 0;
     }
     10% {
@@ -44,7 +44,10 @@
       opacity: 0.4;
     }
     100% {
-      transform: translateY(-120vh) translateX(20px);
+      transform: translate(
+        calc(var(--x) + var(--drift)),
+        -20vh
+      );
       opacity: 0;
     }
   }
@@ -86,6 +89,12 @@
     --color-text: var(--vt-c-text-light-1);
 
     --section-gap: 160px;
+  }
+
+  :root {
+    --x: 0vw;
+    --drift: 0px;
+    --duration: 10s;
   }
 
   @media (prefers-color-scheme: dark) {
