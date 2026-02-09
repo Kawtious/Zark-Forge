@@ -7,8 +7,8 @@
 -->
 <script setup lang="ts">
 const { colour = 'none' } = defineProps<{
-  colour?: string
-}>()
+  colour?: string;
+}>();
 </script>
 
 <template>

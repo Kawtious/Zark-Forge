@@ -3,8 +3,8 @@
 -->
 <script setup lang="ts">
 const { colour = 'black' } = defineProps<{
-  colour?: string
-}>()
+  colour?: string;
+}>();
 </script>
 
 <template>
