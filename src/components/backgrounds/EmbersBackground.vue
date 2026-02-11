@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Background from '@/components/Background.vue';
+import BackgroundWrapper from '@/components/BackgroundWrapper.vue';
 
 const EMBER_COUNT = 30;
 
@@ -17,7 +17,7 @@ const embers = Array.from({ length: EMBER_COUNT }, () => ({
 </script>
 
 <template>
-  <Background>
+  <BackgroundWrapper>
     <div aria-hidden="true" class="pointer-events-none fixed inset-0 overflow-hidden">
       <span
         v-for="(ember, i) in embers"
@@ -33,5 +33,5 @@ const embers = Array.from({ length: EMBER_COUNT }, () => ({
         }"
       />
     </div>
-  </Background>
+  </BackgroundWrapper>
 </template>

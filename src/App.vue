@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import Wrapper from '@/components/Wrapper.vue';
+import PageWrapper from '@/components/PageWrapper.vue';
 </script>
 
 <template>
-  <Wrapper>
+  <PageWrapper>
     <div class="flex min-h-full min-w-full flex-row items-center justify-center">
       <RouterView />
     </div>
-  </Wrapper>
+  </PageWrapper>
 </template>
