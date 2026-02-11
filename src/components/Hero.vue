@@ -31,7 +31,7 @@ import IconEmail from '@/components/icons/IconEmail.vue';
     </section>
 
     <footer id="footer">
-      <div class="grid w-full grid-cols-2 gap-3">
+      <div class="flex flex-row gap-3">
         <a
           href="https://github.com/Kawtious"
           aria-label="GitHub"
