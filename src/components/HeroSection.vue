@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import IconGitHub from '@/components/icons/IconGitHub.vue';
 import IconEmail from '@/components/icons/IconEmail.vue';
+import IconGitHub from '@/components/icons/IconGitHub.vue';
 </script>
 
 <template>
