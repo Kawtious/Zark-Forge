@@ -15,7 +15,7 @@ import IconEmail from '@/components/icons/IconEmail.vue';
     </header>
 
     <section id="welcome-section" class="flex w-full flex-col items-center">
-      <p class="max-w-prose text-center text-base leading-relaxed text-[#e6e2df]">
+      <p class="max-w-prose text-center text-base leading-relaxed">
         Welcome, traveler. You've found your way to my workshop in the Ember Fields, where steel is
         shaped by fire and ideas are forged with care<br />
         <br />
