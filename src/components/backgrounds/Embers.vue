@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import Background from '@/components/Background.vue';
+
 const EMBER_COUNT = 30;
 
 function rand(min: number, max: number) {
@@ -15,10 +17,8 @@ const embers = Array.from({ length: EMBER_COUNT }, () => ({
 </script>
 
 <template>
-  <div
-    class="pointer-events-none fixed top-0 left-0 z-0 block h-full w-full transform-[scale(1)] bg-black bg-size-[auto_cover] bg-scroll bg-top-left bg-repeat-x"
-  >
-    <div aria-hidden="true" class="pointer-events-none fixed inset-0 z-10 overflow-hidden">
+  <Background>
+    <div aria-hidden="true" class="pointer-events-none fixed inset-0 overflow-hidden">
       <span
         v-for="(ember, i) in embers"
         :key="i"
@@ -33,5 +33,5 @@ const embers = Array.from({ length: EMBER_COUNT }, () => ({
         }"
       />
     </div>
-  </div>
+  </Background>
 </template>
