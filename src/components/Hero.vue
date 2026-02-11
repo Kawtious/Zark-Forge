@@ -16,15 +16,15 @@ import IconEmail from '@/components/icons/IconEmail.vue';
 
     <section id="welcome-section" class="flex max-w-prose flex-col gap-6">
       <p class="text-center text-base leading-relaxed text-[#e6e2df]">
-        Welcome, traveler. You've found your way to the Ember Fields, where steel is shaped by fire
-        and ideas are forged with care<br />
+        Welcome, traveler. You've found your way to my workshop in the Ember Fields, where steel is
+        shaped by fire and ideas are forged with care<br />
         <br />
-        I am Z'ark Ashveil, blacksmith of these lands. Every project you see here is crafted at my
-        anvil, shaped through patience, experimentation, and no small amount of heat. Some works are
-        refined and battle-tested, others are fresh sparks still finding their form, but all of them
-        are mine<br />
+        I am Z'ark Ashveil, blacksmith of these lands. Every project you will see here is crafted at
+        my anvil, shaped through patience, experimentation, and no small amount of heat. Some works
+        are refined and battle-tested, others are fresh sparks still finding their form, but all of
+        them are mine<br />
         <br />
-        This forge is where I share what I am building, what I am learning, and the things that
+        This forge is where I will share what I am building, what I am learning, and the things that
         catch fire in my mind. Stay as long as you like. Watch the sparks fly. Perhaps you'll find
         something worth carrying onward
       </p>
