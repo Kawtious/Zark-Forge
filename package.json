@@ -1,6 +1,8 @@
 {
   "name": "zark-forge",
   "version": "0.0.0",
+  "author": "Z'ark Ashveil",
+  "description": "The dragon's forge! Z'ark's own personal website where you can learn more about him",
   "license": "MIT",
   "private": true,
   "type": "module",
