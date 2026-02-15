@@ -1,9 +1,11 @@
 <script setup lang="ts">
-import TheWelcome from '../components/TheWelcome.vue';
+import HeroSection from '@/components/HeroSection.vue';
+import EmbersBackground from '@/components/backgrounds/EmbersBackground.vue';
 </script>
 
 <template>
   <main>
-    <TheWelcome />
+    <EmbersBackground />
+    <HeroSection />
   </main>
 </template>

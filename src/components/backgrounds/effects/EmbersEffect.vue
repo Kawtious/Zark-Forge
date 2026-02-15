@@ -15,7 +15,7 @@ const embers = Array.from({ length: EMBER_COUNT }, () => ({
 </script>
 
 <template>
-  <div aria-hidden="true" class="pointer-events-none fixed inset-0 z-10 overflow-hidden">
+  <div aria-hidden="true" class="pointer-events-none fixed inset-0 overflow-hidden">
     <span
       v-for="(ember, i) in embers"
       :key="i"

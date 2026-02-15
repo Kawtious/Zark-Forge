@@ -1,9 +1,11 @@
 <script setup lang="ts">
-import ForgeView from '@/views/ForgeView.vue';
+import PageWrapper from '@/components/PageWrapper.vue';
 </script>
 
 <template>
-  <ForgeView />
+  <PageWrapper>
+    <div class="flex min-h-full min-w-full flex-row items-center justify-center">
+      <RouterView />
+    </div>
+  </PageWrapper>
 </template>
-
-<style scoped></style>
