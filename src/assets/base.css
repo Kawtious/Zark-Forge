@@ -1,5 +1,7 @@
 @theme {
   --animate-fire-glow: fire-glow 6s ease infinite;
+  --animate-heat-shimmer: heat-shimmer 3s ease-in-out infinite;
+  --animate-ember-rise: ember-rise var(--duration) linear infinite;
 
   @keyframes fire-glow {
     0% {
@@ -12,8 +14,6 @@
       background-position: 0 50%;
     }
   }
-
-  --animate-heat-shimmer: heat-shimmer 3s ease-in-out infinite;
 
   @keyframes heat-shimmer {
     0% {
@@ -29,8 +29,6 @@
       opacity: 0.4;
     }
   }
-
-  --animate-ember-rise: ember-rise var(--duration) linear infinite;
 
   @keyframes ember-rise {
     0% {
