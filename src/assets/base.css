@@ -1,18 +1,53 @@
 @theme {
-  --animate-fire-glow: fire-glow 6s ease infinite;
-  --animate-heat-shimmer: heat-shimmer 3s ease-in-out infinite;
+  --color-zark-1: #150f16;
+  --color-zark-2: #1a141c;
+  --color-zark-3: #271f2a;
+  --color-zark-4: #4c1d33;
+  --color-zark-5: #9e2834;
+  --color-zark-6: #cc5c42;
+  --color-zark-7: #e68950;
+  --color-zark-8: #cc5c42;
+  --color-zark-9: #d8b87a;
+  --color-zark-10: #980c28;
+  --color-zark-11: #db1f1f;
+
+  --color-ref-1: #161418;
+  --color-ref-2: #34161e;
+  --color-ref-3: #aa1b2b;
+  --color-ref-4: #ce6947;
+  --color-ref-5: #a02c34;
+
+  --color-glow-1: rgba(255, 120, 0, 0.6);
+  --color-glow-2: rgba(255, 80, 0, 0.35);
+  --color-glow-3: rgba(255, 50, 0, 0.15);
+
+  --color-title-1: #ffcc33;
+  --color-title-2: #ff7a18;
+  --color-title-3: #ff3c00;
+
+  --color-primary: var(--color-zark-10);
+  --color-secondary: var(--color-zark-7);
+
+  --color-background: var(--color-black);
+  --color-text: rgb(230, 226, 223);
+
+  --x: 0vw;
+  --drift: 0px;
+  --duration: 10s;
+
+  --animate-fire-glow: fire-glow 6s ease-in-out infinite alternate;
+  --animate-heat-shimmer: heat-shimmer 6s ease-in-out infinite;
   --animate-ember-rise: ember-rise var(--duration) linear infinite;
   --animate-glow-pulse: glow-pulse 6s ease-in-out infinite;
+  --animate-fade-in: fadeIn 0.3s ease;
+  --animate-slide-up: slide-up 0.4s ease;
 
   @keyframes fire-glow {
-    0% {
+    from {
       background-position: 0 50%;
     }
-    50% {
+    to {
       background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0 50%;
     }
   }
 
@@ -59,35 +94,20 @@
       opacity: 0.7;
     }
   }
+
+  @keyframes slide-up {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 }
 
 @layer base {
-  :root {
-    --c-white: #000000;
-    --c-black: #000000;
-
-    --c-text-light: rgb(230, 226, 223);
-    --c-text-dark: rgb(230, 226, 223);
-  }
-
-  :root {
-    --x: 0vw;
-    --drift: 0px;
-    --duration: 10s;
-  }
-
-  :root {
-    --color-background: var(--c-white);
-    --color-text: var(--c-text-light);
-  }
-
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --color-background: var(--c-black);
-      --color-text: var(--c-text-dark);
-    }
-  }
-
   *,
   *::before,
   *::after {
@@ -102,7 +122,7 @@
     overflow-x: hidden;
     color: var(--color-text);
     background: var(--color-background);
-    line-height: 1.6;
+    line-height: normal;
     font-family:
       Inter,
       -apple-system,

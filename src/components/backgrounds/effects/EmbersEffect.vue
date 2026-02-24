@@ -19,7 +19,7 @@ const embers = Array.from({ length: EMBER_COUNT }, () => ({
     <span
       v-for="(ember, i) in embers"
       :key="i"
-      class="animate-ember-rise absolute rounded-full bg-[radial-gradient(circle,#ffd27d_0%,#ff7a18_60%,transparent_70%)] opacity-35 blur-[3px]"
+      class="absolute animate-ember-rise rounded-full bg-[radial-gradient(circle,#ffd27d_0%,#ff7a18_60%,transparent_70%)] opacity-35 blur-[3px]"
       :style="{
         'width': ember.size + 'px',
         'height': ember.size + 'px',
