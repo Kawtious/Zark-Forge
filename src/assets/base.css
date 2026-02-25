@@ -41,6 +41,7 @@
   --animate-glow-pulse: glow-pulse 6s ease-in-out infinite;
   --animate-fade-in: fadeIn 0.3s ease;
   --animate-slide-up: slide-up 0.4s ease;
+  --animate-copy-tooltip-fade-in-out: copy-tooltip-fade-in-out 1.5s ease forwards;
 
   @keyframes fire-glow {
     from {
@@ -103,6 +104,22 @@
     to {
       opacity: 1;
       transform: translateY(0);
+    }
+  }
+
+  @keyframes copy-tooltip-fade-in-out {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    20%,
+    80% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateY(-10px);
     }
   }
 }
