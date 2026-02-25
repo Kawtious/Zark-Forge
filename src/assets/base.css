@@ -96,7 +96,7 @@
   }
 
   @keyframes slide-up {
-    0% {
+    from {
       opacity: 0;
       transform: translateY(30px);
     }

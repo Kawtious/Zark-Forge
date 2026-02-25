@@ -15,11 +15,11 @@ const embers = Array.from({ length: EMBER_COUNT }, () => ({
 </script>
 
 <template>
-  <div aria-hidden="true" class="pointer-events-none fixed inset-0 overflow-hidden">
-    <span
-      v-for="(ember, i) in embers"
-      :key="i"
-      class="absolute animate-ember-rise rounded-full bg-[radial-gradient(circle,#ffd27d_0%,#ff7a18_60%,transparent_70%)] opacity-35 blur-[3px]"
+  <div class="pointer-events-none fixed inset-0 overflow-hidden">
+    <div
+      v-for="(ember, index) in embers"
+      :key="index"
+      class="absolute animate-ember-rise rounded-full bg-radial from-title-1 from-0% via-title-2 via-60% to-transparent to-70% opacity-35 blur-xs"
       :style="{
         'width': ember.size + 'px',
         'height': ember.size + 'px',

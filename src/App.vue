@@ -1,11 +1,10 @@
 <script setup lang="ts">
-import PageWrapper from '@/components/PageWrapper.vue';
+import EmbersBackground from '@/components/EmbersBackground.vue';
 </script>
 
 <template>
-  <PageWrapper>
-    <div class="flex min-h-full min-w-full flex-row items-center justify-center">
-      <RouterView />
-    </div>
-  </PageWrapper>
+  <div class="relative flex min-h-screen items-center justify-center overflow-hidden p-0 sm:p-6">
+    <EmbersBackground />
+    <RouterView />
+  </div>
 </template>

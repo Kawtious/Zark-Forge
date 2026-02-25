@@ -1,11 +1,9 @@
 <script setup lang="ts">
-import HeroSection from '@/components/HeroSection.vue';
-import EmbersBackground from '@/components/backgrounds/EmbersBackground.vue';
+import HeroLayout from '@/layouts/HeroLayout.vue';
 </script>
 
 <template>
   <main>
-    <EmbersBackground />
-    <HeroSection />
+    <HeroLayout />
   </main>
 </template>
