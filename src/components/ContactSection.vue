@@ -25,10 +25,9 @@ function copy(text: string, event: MouseEvent) {
       class="group flex items-center justify-center gap-2 rounded-xl px-3 py-2 text-sm font-semibold text-title-1 transition duration-200 hover:-translate-y-0.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-title-2/50"
     >
       <IconGitHub
-        class="h-5 w-5 shrink-0 text-title-2 transition duration-200 group-hover:drop-shadow-[0_0_6px_rgba(255,80,0,0.8)]"
+        class="h-10 w-10 shrink-0 text-title-2 transition duration-200 group-hover:drop-shadow-[0_0_6px_rgba(255,80,0,0.8)]"
         colour="currentColor"
       />
-      GitHub
     </a>
 
     <button
@@ -37,10 +36,9 @@ function copy(text: string, event: MouseEvent) {
       class="group flex cursor-pointer items-center justify-center gap-2 rounded-xl px-3 py-2 text-sm font-semibold text-title-1 transition duration-200 hover:-translate-y-0.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-title-2/50"
     >
       <IconDiscord
-        class="h-5 w-5 shrink-0 text-title-2 transition duration-200 group-hover:drop-shadow-[0_0_6px_rgba(255,80,0,0.8)]"
+        class="h-10 w-10 shrink-0 text-title-2 transition duration-200 group-hover:drop-shadow-[0_0_6px_rgba(255,80,0,0.8)]"
         colour="currentColor"
       />
-      Discord
     </button>
 
     <a
@@ -49,10 +47,9 @@ function copy(text: string, event: MouseEvent) {
       class="group flex items-center justify-center gap-2 rounded-xl px-3 py-2 text-sm font-semibold text-title-1 transition duration-200 hover:-translate-y-0.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-title-2/50"
     >
       <IconEmail
-        class="h-5 w-5 shrink-0 text-title-2 transition duration-200 group-hover:text-title-2 group-hover:drop-shadow-[0_0_6px_rgba(255,80,0,0.8)]"
+        class="h-10 w-10 shrink-0 text-title-2 transition duration-200 group-hover:text-title-2 group-hover:drop-shadow-[0_0_6px_rgba(255,80,0,0.8)]"
         colour="currentColor"
       />
-      Email
     </a>
   </div>
 </template>
