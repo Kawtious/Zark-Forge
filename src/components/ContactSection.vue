@@ -20,6 +20,8 @@ function copy(text: string, event: MouseEvent) {
 <template>
   <div class="flex flex-row items-center justify-center gap-3">
     <a
+      target="_blank"
+      rel="noopener noreferrer"
       href="https://github.com/Kawtious"
       aria-label="GitHub"
       class="group flex items-center justify-center gap-2 rounded-xl px-3 py-2 text-sm font-semibold text-title-1 transition duration-200 hover:-translate-y-0.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-title-2/50"
