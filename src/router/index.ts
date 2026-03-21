@@ -12,12 +12,12 @@ const router = createRouter({
     {
       path: '/fursona',
       name: 'fursona',
-      component: import('@/pages/FursonaPage.vue')
+      component: () => import('@/pages/FursonaPage.vue')
     },
     {
       path: '/projects',
       name: 'projects',
-      component: import('@/pages/ProjectsPage.vue')
+      component: () => import('@/pages/ProjectsPage.vue')
     }
   ]
 });
