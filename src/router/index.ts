@@ -1,4 +1,4 @@
-import HomeView from '@/views/HomeView.vue';
+import HomePage from '@/pages/HomePage.vue';
 import { createRouter, createWebHistory } from 'vue-router';
 
 const router = createRouter({
@@ -7,12 +7,17 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: HomeView
+      component: HomePage
     },
     {
-      path: '/about',
-      name: 'about',
-      component: () => import('@/views/AboutView.vue')
+      path: '/fursona',
+      name: 'fursona',
+      component: import('@/pages/FursonaPage.vue')
+    },
+    {
+      path: '/projects',
+      name: 'projects',
+      component: import('@/pages/ProjectsPage.vue')
     }
   ]
 });

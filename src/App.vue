@@ -1,12 +1,22 @@
 <script setup lang="ts">
-import CopyTooltip from '@/components/CopyTooltip.vue';
-import EmbersBackground from '@/components/EmbersBackground.vue';
+import SocialLinks from '@/components/SocialLinks.vue';
+import EmbersBackground from '@/components/backgrounds/EmbersBackground.vue';
+import CopyTooltip from '@/components/tooltips/CopyTooltip.vue';
 </script>
 
 <template>
-  <div class="relative flex min-h-screen items-center justify-center overflow-hidden p-0 sm:p-6">
-    <EmbersBackground />
+  <main>
+    <EmbersBackground id="background" class="-z-50" />
+
     <RouterView />
-    <CopyTooltip />
-  </div>
+
+    <footer class="z-10 flex w-full flex-row items-center justify-center gap-64 p-10">
+      <p class="text-sm opacity-50">© 2026 Z'ark Ashveil. All rights reserved.</p>
+      <SocialLinks />
+    </footer>
+
+    <div id="overlay" class="z-50">
+      <CopyTooltip />
+    </div>
+  </main>
 </template>

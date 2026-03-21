@@ -1,47 +1,89 @@
 @theme {
-  --color-zark-1: #150f16;
-  --color-zark-2: #1a141c;
-  --color-zark-3: #271f2a;
-  --color-zark-4: #4c1d33;
-  --color-zark-5: #9e2834;
-  --color-zark-6: #cc5c42;
-  --color-zark-7: #e68950;
-  --color-zark-8: #cc5c42;
-  --color-zark-9: #d8b87a;
-  --color-zark-10: #980c28;
-  --color-zark-11: #db1f1f;
+  --color-pearl-beige-50: #f9f5eb;
+  --color-pearl-beige-100: #f3ead8;
+  --color-pearl-beige-200: #e7d5b1;
+  --color-pearl-beige-300: #dbc08a;
+  --color-pearl-beige-400: #cfab63;
+  --color-pearl-beige-500: #c3963c;
+  --color-pearl-beige-600: #9c7830;
+  --color-pearl-beige-700: #755a24;
+  --color-pearl-beige-800: #4e3c18;
+  --color-pearl-beige-900: #271e0c;
+  --color-pearl-beige-950: #1b1508;
 
-  --color-ref-1: #161418;
-  --color-ref-2: #34161e;
-  --color-ref-3: #aa1b2b;
-  --color-ref-4: #ce6947;
-  --color-ref-5: #a02c34;
+  --color-shadow-grey-50: #f4f0f4;
+  --color-shadow-grey-100: #e8e2e9;
+  --color-shadow-grey-200: #d2c5d3;
+  --color-shadow-grey-300: #bba8bd;
+  --color-shadow-grey-400: #a58ba7;
+  --color-shadow-grey-500: #8e6e91;
+  --color-shadow-grey-600: #725874;
+  --color-shadow-grey-700: #554257;
+  --color-shadow-grey-800: #392c3a;
+  --color-shadow-grey-900: #1c161d;
+  --color-shadow-grey-950: #140f14;
 
-  --color-glow-1: rgba(255, 120, 0, 0.6);
-  --color-glow-2: rgba(255, 80, 0, 0.35);
-  --color-glow-3: rgba(255, 50, 0, 0.15);
+  --color-coffee-bean-50: #f4f0f4;
+  --color-coffee-bean-100: #e9e1ea;
+  --color-coffee-bean-200: #d3c3d5;
+  --color-coffee-bean-300: #bca5c0;
+  --color-coffee-bean-400: #a688aa;
+  --color-coffee-bean-500: #906a95;
+  --color-coffee-bean-600: #735577;
+  --color-coffee-bean-700: #563f5a;
+  --color-coffee-bean-800: #3a2a3c;
+  --color-coffee-bean-900: #1d151e;
+  --color-coffee-bean-950: #140f15;
 
-  --color-title-1: #ffcc33;
-  --color-title-2: #ff7a18;
-  --color-title-3: #ff3c00;
+  --color-crimson-violet-50: #f8ecf2;
+  --color-crimson-violet-100: #f2d9e5;
+  --color-crimson-violet-200: #e5b3ca;
+  --color-crimson-violet-300: #d88db0;
+  --color-crimson-violet-400: #cb6796;
+  --color-crimson-violet-500: #be417b;
+  --color-crimson-violet-600: #983463;
+  --color-crimson-violet-700: #72274a;
+  --color-crimson-violet-800: #4c1a31;
+  --color-crimson-violet-900: #260d19;
+  --color-crimson-violet-950: #1b0911;
 
-  --color-primary: var(--color-zark-10);
-  --color-secondary: var(--color-zark-7);
+  --color-intense-cherry-50: #faeaec;
+  --color-intense-cherry-100: #f6d5d9;
+  --color-intense-cherry-200: #ecacb2;
+  --color-intense-cherry-300: #e3828c;
+  --color-intense-cherry-400: #d95966;
+  --color-intense-cherry-500: #d02f3f;
+  --color-intense-cherry-600: #a62633;
+  --color-intense-cherry-700: #7d1c26;
+  --color-intense-cherry-800: #531319;
+  --color-intense-cherry-900: #2a090d;
+  --color-intense-cherry-950: #1d0709;
 
-  --color-background: var(--color-black);
-  --color-text: rgb(230, 226, 223);
+  --color-burnt-peach-50: #fcede9;
+  --color-burnt-peach-100: #f8dad3;
+  --color-burnt-peach-200: #f1b6a7;
+  --color-burnt-peach-300: #ea917b;
+  --color-burnt-peach-400: #e36c4f;
+  --color-burnt-peach-500: #dd4822;
+  --color-burnt-peach-600: #b0391c;
+  --color-burnt-peach-700: #842b15;
+  --color-burnt-peach-800: #581d0e;
+  --color-burnt-peach-900: #2c0e07;
+  --color-burnt-peach-950: #1f0a05;
 
-  --x: 0vw;
-  --drift: 0px;
-  --duration: 10s;
+  --color-sandy-brown-50: #fef1e7;
+  --color-sandy-brown-100: #fce3cf;
+  --color-sandy-brown-200: #f9c79f;
+  --color-sandy-brown-300: #f7ac6e;
+  --color-sandy-brown-400: #f4903e;
+  --color-sandy-brown-500: #f1740e;
+  --color-sandy-brown-600: #c15d0b;
+  --color-sandy-brown-700: #914608;
+  --color-sandy-brown-800: #602e06;
+  --color-sandy-brown-900: #301703;
+  --color-sandy-brown-950: #221002;
 
   --animate-fire-glow: fire-glow 6s ease-in-out infinite alternate;
-  --animate-heat-shimmer: heat-shimmer 6s ease-in-out infinite;
-  --animate-ember-rise: ember-rise var(--duration) linear infinite;
-  --animate-glow-pulse: glow-pulse 6s ease-in-out infinite;
-  --animate-fade-in: fadeIn 0.3s ease;
-  --animate-slide-up: slide-up 0.4s ease;
-  --animate-copy-tooltip-fade-in-out: copy-tooltip-fade-in-out 1.5s ease forwards;
 
   @keyframes fire-glow {
     from {
@@ -51,6 +93,8 @@
       background-position: 100% 50%;
     }
   }
+
+  --animate-heat-shimmer: heat-shimmer 6s ease-in-out infinite;
 
   @keyframes heat-shimmer {
     0% {
@@ -66,6 +110,11 @@
       opacity: 0.4;
     }
   }
+
+  --x: 0vw;
+  --drift: 0px;
+  --duration: 10s;
+  --animate-ember-rise: ember-rise var(--duration) linear infinite;
 
   @keyframes ember-rise {
     0% {
@@ -84,6 +133,8 @@
     }
   }
 
+  --animate-glow-pulse: glow-pulse 6s ease-in-out infinite;
+
   @keyframes glow-pulse {
     0%,
     100% {
@@ -96,6 +147,9 @@
     }
   }
 
+  --animate-slide-up: slide-up 0.4s ease;
+  --animate-fade-in: fadeIn 0.3s ease;
+
   @keyframes slide-up {
     from {
       opacity: 0;
@@ -106,6 +160,8 @@
       transform: translateY(0);
     }
   }
+
+  --animate-copy-tooltip-fade-in-out: copy-tooltip-fade-in-out 1.5s ease forwards;
 
   @keyframes copy-tooltip-fade-in-out {
     0% {
@@ -128,17 +184,14 @@
   *,
   *::before,
   *::after {
-    box-sizing: border-box;
-    margin: 0;
-    font-weight: normal;
   }
 
   body {
     min-height: 100vh;
     min-width: 320px;
     overflow-x: hidden;
-    color: var(--color-text);
-    background: var(--color-background);
+    color: var(--color-intense-cherry-50);
+    background: var(--color-coffee-bean-950);
     line-height: normal;
     font-family:
       Inter,
@@ -162,6 +215,5 @@
   #app {
     min-width: 100%;
     min-height: 100%;
-    font-weight: normal;
   }
 }

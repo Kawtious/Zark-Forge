@@ -19,7 +19,7 @@ const embers = Array.from({ length: EMBER_COUNT }, () => ({
     <div
       v-for="(ember, index) in embers"
       :key="index"
-      class="absolute animate-ember-rise rounded-full bg-radial from-title-1 from-0% via-title-2 via-60% to-transparent to-70% opacity-35 blur-xs"
+      class="absolute animate-ember-rise rounded-full bg-radial from-intense-cherry-300 from-0% via-intense-cherry-500 via-60% to-transparent to-70% opacity-35 blur-xs"
       :style="{
         'width': ember.size + 'px',
         'height': ember.size + 'px',
@@ -28,6 +28,6 @@ const embers = Array.from({ length: EMBER_COUNT }, () => ({
         '--drift': ember.drift + 'px',
         '--duration': ember.duration + 's'
       }"
-    />
+    ></div>
   </div>
 </template>
